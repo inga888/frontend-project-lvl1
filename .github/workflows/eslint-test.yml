@@ -11,13 +11,12 @@ on:
     branches: [ main ]
 
 jobs:
-    runs-on: ubuntu-latest
-    
+ eslint-check:
 
-steps:
+runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-      - uses: actions/setup-node@v1
-        run: make install
-      - name: test
-        run: make lint
+      - uses: actions/setup-node@v2
+      - run: make install
+      - run: make lint
+
