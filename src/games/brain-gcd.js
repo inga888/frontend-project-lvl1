@@ -3,15 +3,10 @@ import playGame from '../index.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
-  a = Math.abs(a);
-  b = Math.abs(b);
-  if (b > a) { let tmp = a; a = b; b = tmp;}
-  while (true) {
-    if (b === 0) return a;
-    a %= b;
-    if (a === 0) return b;
-    b %= a;
+  if (b) {
+    return gcd(b, a % b);
   }
+  return Math.abs(a);
 };
 
 const gameData = () => {
