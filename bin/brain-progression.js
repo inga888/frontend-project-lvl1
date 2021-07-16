@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { playProgrGame } from '../src/games/brain-progression.js';
+import { playProgressionGame } from '../src/games/brain-progression.js';
 
-playProgrGame();
+playProgressionGame();

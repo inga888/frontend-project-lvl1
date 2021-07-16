@@ -15,22 +15,15 @@ const getProgression = () => {
 };
 
 const gameData = () => {
-  const progression = getProgression();
+  let progression = getProgression();
   const missingIndex = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[missingIndex]);
-  let questionProgression = [];
-  for (const item of progression) {
-    if (item === progression[missingIndex]) {
-      questionProgression.push('..');
-      continue;
-    }
-    questionProgression.push(item);
-  }
-  questionProgression = questionProgression.join();
-  const question = `Question: ${questionProgression}`;
+  progression[missingIndex] = '..';
+  progression = progression.join();
+  const question = progression;
   const result = [question, correctAnswer];
   return result;
 };
 
-const playProgrGame = () => playGame(gameRule, gameData);
-export { gameRule, playProgrGame };
+const playProgressionGame = () => playGame(gameRule, gameData);
+export { gameRule, playProgressionGame };
