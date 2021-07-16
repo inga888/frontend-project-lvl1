@@ -19,7 +19,7 @@ const gameData = () => {
   const missingIndex = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[missingIndex]);
   progression[missingIndex] = '..';
-  progression = progression.join();
+  progression = progression.join(' ');
   const question = progression;
   const result = [question, correctAnswer];
   return result;
