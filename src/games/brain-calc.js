@@ -3,7 +3,7 @@ import playGame from '../index.js';
 
 const gameRule = 'What is the result of the expression?';
 
-const gameData = () => {
+const genGameData = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
@@ -26,5 +26,5 @@ const gameData = () => {
   return result;
 };
 
-const playCalcGame = () => playGame(gameRule, gameData);
-export { gameRule, playCalcGame };
+const playCalcGame = () => playGame(gameRule, genGameData);
+export default playCalcGame;

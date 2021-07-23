@@ -14,7 +14,7 @@ const getProgression = () => {
   return progression;
 };
 
-const gameData = () => {
+const genGameData = () => {
   let progression = getProgression();
   const missingIndex = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[missingIndex]);
@@ -25,5 +25,5 @@ const gameData = () => {
   return result;
 };
 
-const playProgressionGame = () => playGame(gameRule, gameData);
-export { gameRule, playProgressionGame };
+const playProgressionGame = () => playGame(gameRule, genGameData);
+export default playProgressionGame;

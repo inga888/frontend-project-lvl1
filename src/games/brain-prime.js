@@ -15,7 +15,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const gameData = () => {
+const genGameData = () => {
   const randomNum = getRandomInt(1, 100);
   const question = randomNum;
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
@@ -23,5 +23,5 @@ const gameData = () => {
   return result;
 };
 
-const playPrimeGame = () => playGame(gameRule, gameData);
-export { gameRule, playPrimeGame };
+const playPrimeGame = () => playGame(gameRule, genGameData);
+export default playPrimeGame;

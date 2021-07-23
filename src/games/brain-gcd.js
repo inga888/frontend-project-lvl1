@@ -9,7 +9,7 @@ const gcd = (a, b) => {
   return Math.abs(a);
 };
 
-const gameData = () => {
+const genGameData = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const question = `Question: ${num1} ${num2}`;
@@ -18,5 +18,5 @@ const gameData = () => {
   return result;
 };
 
-const playGcdGame = () => playGame(gameRule, gameData);
-export { gameRule, playGcdGame };
+const playGcdGame = () => playGame(gameRule, genGameData);
+export default playGcdGame;
