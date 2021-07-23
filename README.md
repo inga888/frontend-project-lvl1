@@ -8,16 +8,21 @@
 # Asciinemas #
 
 **brain-even**
+
 [![asciicast](https://asciinema.org/a/426902.svg)](https://asciinema.org/a/426902)
 
 **brain-calc**
+
 [![asciicast](https://asciinema.org/a/425275.svg)](https://asciinema.org/a/425275)
 
 **brain-gcd**
+
 [![asciicast](https://asciinema.org/a/425291.svg)](https://asciinema.org/a/425291)
 
 **brain-progression**
+
 [![asciicast](https://asciinema.org/a/425735.svg)](https://asciinema.org/a/425735)
 
 **brain-prime**
+
 [![asciicast](https://asciinema.org/a/425729.svg)](https://asciinema.org/a/425729)
